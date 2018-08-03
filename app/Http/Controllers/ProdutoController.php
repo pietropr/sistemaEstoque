@@ -50,6 +50,8 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
+
+        //Testando upload de arquivo git pelo phpstorm
         $foto = $request->file('foto');
         $dados = $request->except('_token', 'foto');
 
