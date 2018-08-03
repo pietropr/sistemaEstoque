@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    $("#produtos a[data-toggle='modal']").on('click', function () {
+
+        var toggle = $(this).attr('data-id');
+
+        $('#modal a').attr('href', '/painel/produtos/excluir/'+toggle)
+
+    });
+
     tinymce.init({
         selector: 'textarea',
         height: 500,

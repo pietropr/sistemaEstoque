@@ -134,6 +134,10 @@ class ProdutoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete = $this->produto->find($id)->delete();
+
+        if($delete) {
+            return Redirect::to('/painel/produtos')->with('success', 'Item excluido com sucesso');
+        }
     }
 }

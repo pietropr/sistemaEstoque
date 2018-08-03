@@ -23,6 +23,7 @@ Route::post('/painel/produtos/store', "ProdutoController@store" );
 Route::get('/painel/produtos/novo', "ProdutoController@create" );
 Route::get('/painel/produtos/', "ProdutoController@index" );
 Route::get('/painel/produtos/ver/{id}', "ProdutoController@show" );
+Route::get('/painel/produtos/excluir/{id}', "ProdutoController@destroy" );
 
 
 //Categorias
