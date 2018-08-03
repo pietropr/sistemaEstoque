@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+    $("#produto-ver .fotos .owl-carousel").owlCarousel({
+        loop: true,
+        responsive: {
+            1000: {
+                items: 1
+            }
+        },
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
+
+
+    });
+
     $("#produtos a[data-toggle='modal']").on('click', function () {
 
         var toggle = $(this).attr('data-id');
@@ -7,6 +21,8 @@ $(document).ready(function() {
         $('#modal a').attr('href', '/painel/produtos/excluir/'+toggle)
 
     });
+
+
 
     tinymce.init({
         selector: 'textarea',

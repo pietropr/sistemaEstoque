@@ -20,6 +20,7 @@
                         <th>Valor</th>
                         <th>Descrição</th>
                         <th>Categoria</th>
+                        <th>Quantidade</th>
                         <th>Opções</th>
                     </tr>
                 </thead>
@@ -31,6 +32,7 @@
                             <td>{{$p->preco}}</td>
                             <td>{{$p->descricao}}</td>
                             <td>{{$p->categoria->nome}}</td>
+                            <td>{{$p->quantidade}}</td>
                             <td>
                                 <a class="btn btn-sm btn-primary" href="/painel/produtos/ver/{{$p->id}}">Veja mais</a>
                                 <a data-toggle="modal" data-target="#modal" class="btn btn-sm btn-danger" data-id="{{$p->id}}" href="#">Excluir</a>

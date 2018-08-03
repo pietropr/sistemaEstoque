@@ -1,10 +1,21 @@
-@section('class', 'produto-novo')
+@section('class', 'produto-ver')
 @extends('templates.principal')
 @section('conteudo')
 
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <h1 class="text-uppercase bold font-weight-bold">{{$produto->nome}}</h1>
+        </div>
+        <div class="fotos">
+            <div class="row flex-lg-wrap owl-carousel" style="width: 20%">
+                @foreach($fotos as $foto)
+                    <article class="item">
+                        <img class="img-thumbnail" width="250" src="/storage/produtos/produto-{{$produto->id}}/{{$foto->caminho}}">
+                    </article>
+
+                @endforeach
+            </div>
+
         </div>
         <hr>
         <p><strong>Código: </strong>{{$produto->id}}</p>
@@ -20,17 +31,7 @@
         </div>
         <h3>FOTOS DO PRODUTO</h3>
         <hr>
-        <div class="fotos">
-            <ul class="row flex-lg-wrap">
-                @foreach($fotos as $foto)
-                    <li class="">
-                        <img class="img-thumbnail" width="250" src="/storage/produtos/produto-{{$produto->id}}/{{$foto->caminho}}">
-                    </li>
 
-                @endforeach
-            </ul>
-
-        </div>
     </div>
 
 @endsection

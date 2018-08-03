@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/compiled.css">
+    <link rel="stylesheet" href="/js/owl/dist/assets/owl.carousel.css">
 </head>
 <body id="@yield('class')">
 @if(!Auth::guest())
@@ -59,5 +60,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="/js/script.js"></script>
 <script src="/js/tinymce/tinymce.js"></script>
+<script src="/js/owl/dist/owl.carousel.js"></script>
 </body>
 </html>
