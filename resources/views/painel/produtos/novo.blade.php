@@ -11,9 +11,13 @@
                     <label>Nome</label>
                     <input class="form-control" type="text" name="nome" id="nome">
                 </div>
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-4">
                     <label>Valor</label>
                     <input class="form-control" type="text" name="preco" id="preco">
+                </div>
+                <div class="form-group col-sm-2">
+                    <label>Quantidade</label>
+                    <input class="form-control" type="number" name="quantidade" id="quantidade">
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Descricao</label>
